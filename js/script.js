@@ -78,7 +78,7 @@ const mainStage = new Stage("main-canvas");
 const stages = [trailsStage, mainStage];
 
 //随机文字烟花内容
-const randomWords = ["新年快乐", "心想事成"];
+const randomWords = ["王璇生日快乐", "科研顺利", "一百篇SCI", "早日毕业"];
 const wordDotsMap = {};
 randomWords.forEach((word) => {
 	wordDotsMap[word] = MyMath.literalLattice(word, 3, "Gabriola,华文琥珀", "90px");
@@ -2155,11 +2155,11 @@ class Shell {
 		}
 
 		if (!this.disableWordd && store.state.config.wordShell) {
-			if (Math.random() < 0.1) {
-				if (Math.random() < 0.5) {
+			// if (Math.random() < 0.1) {
+				if (Math.random() < 0.9) {
 					createWordBurst(randomWord(), dotStarFactory, x, y);
 				}
-			}
+			// }
 		}
 
 		if (this.pistil) {
